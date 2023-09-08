@@ -1,7 +1,7 @@
-# E6040-super-resolution-project
+# super-resolution-project
 
 
-### Group: SPRL
+### Reference
 * 	Huixiang Zhuang hz2538@COLUMBIA.EDU
 >https://github.com/hz2538
 * 	Hadrien Cornier hc3040@COLUMBIA.EDU
@@ -20,11 +20,15 @@ This repo aims at reproducing the results of the paper https://arxiv.org/abs/180
 We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, and adjusted the extent of low-resolution. 
 
 ### Dataset
-The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://www.humanconnectomeproject.org. The data contains 3D
-T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. You can either download full dataset from that website or request access to their Amazon S3.
+> The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://www.humanconnectomeproject.org. The data contains 3D
+> T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. You can either download full dataset from that website or request access to their Amazon S3.
+
+Will use private dataset instead.
 
 ### Prerequisites
-The coding is based on PyTorch 0.4.0 with CUDA 9.1 and CUDNN 7.5. The project is implemented originally on Google Cloud Platform (GCP).
+> The coding is based on PyTorch 0.4.0 with CUDA 9.1 and CUDNN 7.5. The project is implemented originally on Google Cloud Platform (GCP).
+
+Will update to Pytorch 1.0 with CUDA 11.8 and CUDNN 8.6.
 Basically, you need these tools:
 
 `pip install numpy matplotlib scipy nibabel pandas skimage`
